@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {CreateTaskComponent} from './create-task/create-task.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
+  imports: [
+    CreateTaskComponent
+  ],
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
