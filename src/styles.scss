@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: Inter,sans-serif;
+}
+.btn {
+  font-size: 1.8rem;
+  color: white;
+  background-color: slateblue;
+  padding: 2rem 4.5rem;
+  border-radius: 5rem;
+  border: 0;
+  cursor: pointer;
+}
+.btn-cancel {
+  background-color: firebrick;
+  transition: all .1s ease;
+  &:hover {
+    background-color: rgba(178, 34, 34, 0.8);
+  }
+}
+
