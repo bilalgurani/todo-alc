@@ -4,12 +4,22 @@
     <p>Medium Level</p>
   </div>
   <div class="create-input">
-    <input class="search-input" type="search" placeholder="Add a new task">
+    <input class="search-input" [(ngModel)]="taskName" type="text" placeholder="Add a new task">
   </div>
   <div class="btm-row">
-    <input class="search-input" type="date">
-    <input class="search-input" type="search" placeholder="Enter comma separated tags">
-    <button class="btn btn-add">Add task</button>
-    <button class="btn btn-cancel">Cancel</button>
+    <input class="date-input" type="date" [(ngModel)]="createdOn">
+    <input class="search-input search-tags" [(ngModel)]="tagsNames" type="text" placeholder="Enter comma separated tags">
+    <button (click)="addTask()" class="btn btn-add">Add task</button>
+    <button (click)="clearSearch()" class="btn btn-cancel">Cancel</button>
+  </div>
+  <div class="list-container">
+    <div class="list-row">
+      <input type="checkbox">
+      <p class="list-name">name</p>
+      <p class="list-name">Due date</p>
+      <p class="list-name">tags</p>
+    </div>
   </div>
 </div>
+
+

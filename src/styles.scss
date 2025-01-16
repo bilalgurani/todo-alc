@@ -10,9 +10,19 @@ html {
   font-family: Inter,sans-serif;
 }
 .btn {
-  padding: 1rem 2rem;
-  border-radius: 1rem;
+  font-size: 1.8rem;
+  color: white;
+  background-color: slateblue;
+  padding: 2rem 4.5rem;
+  border-radius: 5rem;
   border: 0;
   cursor: pointer;
+}
+.btn-cancel {
+  background-color: firebrick;
+  transition: all .1s ease;
+  &:hover {
+    background-color: rgba(178, 34, 34, 0.8);
+  }
 }
 
