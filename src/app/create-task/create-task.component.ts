@@ -39,7 +39,16 @@ export class CreateTaskComponent {
     // }))
   //   Reduce will return array.reduce(callback, initialValue);
   //   console.log(this.jsonData.reduce((acc: any, current: any) => acc + current.id, 0))
-    console.log(this.jsonData.reduce((a: any, curr: any) => Math.max(a, curr.id), 0));
+  //   console.log(this.jsonData.reduce((a: any, curr: any) => Math.max(a, curr.id), 0));
+    const num = [1, 2, 3, 4, 5];
+    const str = ["bilal", "khan", "c"];
+    this.getFirstElement<Number>(num);
+    this.getFirstElement<String>(str);
+  }
+
+  getFirstElement<ElementType>(elements: ElementType[]) {
+    console.log(elements[0])
+    return elements[0];
   }
 
    jsonData: any = [{
@@ -71,6 +80,8 @@ export class CreateTaskComponent {
     "gender": "Male",
     "ip_address": "67.76.188.26"
   }];
+
+
 
 
 }
