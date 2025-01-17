@@ -1,0 +1,55 @@
+.parent {
+  height: 200px;
+  width: 300px;
+  background-color: slateblue;
+}
+.child {
+  height: 50%;
+  width: 1%;
+  background-color: darkred;
+  transition: all .2s;
+}
+
+.parent:hover .child {
+  animation: left-to-right 1s forwards;
+}
+
+@keyframes left-to-right {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateY(10%);
+    width: 50%;
+  }
+  66% {
+    transform: translateX(60%) translateY(70%);
+    width: 50%;
+  }
+  100% {
+    transform: translateX(10%);
+    width: 50%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
