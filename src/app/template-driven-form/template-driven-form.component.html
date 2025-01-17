@@ -1,0 +1,27 @@
+<div class="container">
+  <form (ngSubmit)="ngFormSubmitted()" #contactForm="ngForm">
+    <div class="input-box">
+      <div class="form-row-1">
+        <div class="row-1-l">
+          <input class="input-placeholder w-input" name="firstName" ngModel placeholder="First Name" type="text" required #fName="ngModel">
+          <p *ngIf="fName.invalid && fName.touched" class="error-msg">*First name is required!</p>
+        </div>
+        <div class="row-1-r">
+          <input class="input-placeholder w-input" name="lastname" ngModel placeholder="Last Name" type="text" required>
+        </div>
+      </div>
+      <div class="form-row-o">
+        <input  class="input-placeholder w-input" name="email" ngModel placeholder="email address" type="email" required>
+      </div>
+      <div class="form-row-o">
+        <input class="input-placeholder w-input" name="phoneNumber" ngModel placeholder="phone number" type="number" required>
+      </div>
+      <div class="form-row-o">
+        <input class="input-placeholder w-input" name="message" ngModel placeholder="message" type="text">
+      </div>
+      <div class="form-row-o">
+        <button type="submit" class="btn-submit" [disabled]="contactForm.invalid">submit</button>
+      </div>
+    </div>
+  </form>
+</div>

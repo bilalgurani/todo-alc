@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import {CreateTaskComponent} from './create-task/create-task.component';
+import {TemplateDrivenFormComponent} from './template-driven-form/template-driven-form.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   imports: [
-    CreateTaskComponent
+    TemplateDrivenFormComponent
   ],
   styleUrl: './app.component.scss'
 })
