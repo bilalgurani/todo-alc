@@ -6,7 +6,6 @@ import {TemplateDrivenFormComponent} from './template-driven-form/template-drive
   templateUrl: './app.component.html',
   imports: [
     TemplateDrivenFormComponent
-
   ],
   styleUrl: './app.component.scss'
 })
